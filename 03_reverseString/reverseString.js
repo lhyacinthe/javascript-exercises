@@ -1,9 +1,8 @@
 const reverseString = function(word) {
-    // let letters = [];
-    let newWord = word;
-    let letters = Array.from(newWord);
-    let reversedArray = letters.reverse();
-    return finalWord = reversedArray.toString();
+    const letters = word.split('');
+    const reversedArr = letters.reverse();
+    const reversedStr = reversedArr.toString();
+    return reversedStr.replaceAll(',' , '');
 };
 
 // Do not edit below this line
